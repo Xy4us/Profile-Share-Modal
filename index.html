@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Share Modal | Ayush Kumar</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+
+    <link rel="stylesheet" href="/assets/index-9d3f43a2.css" />
+  </head>
+  <body>
+    <!--Wrapper-->
+    <div
+      class="w-[100vw] h-[100vh] flex bg-black overflow-hidden relative justify-center items-center"
+    >
+      <!--First circle-->
+      <div class="circle1"></div>
+      <!--Second Circle-->
+      <div class="circle2"></div>
+
+      <!--Hero section-->
+      <div
+        class="flex flex-col absolute h-[450px] rounded-2xl border-[#ffffff30] items-center justify-evenly bg-[#ffffff1a] backdrop-blur-xs border-2 text-white px-12 py-10 z-0"
+      >
+        <!--Image -->
+        <img
+          src="/assets/UserImageAyush1-2e7936bd.jpg"
+          alt=""
+          class="rounded-[50%] flex absolute w-[150px] border-[2px] [150px] top-4 border-solid border-[#ffffff30]"
+        />
+
+        <h2
+          class="font-bold flex relative top-20 text-center select-none text-4xl text-[#ffffff85]"
+        >
+          Ayush Kumar
+        </h2>
+
+        <h3 class="text-center flex relative text-[#ffffff85] top-10">
+          Student, GLB
+        </h3>
+
+        <!--Bottom grp-->
+        <div class="flex xl:justify-between gap-3 flex-col xl:flex-row">
+          <button
+            onclick="openModal()"
+            class="flex justify-center items-center gap-2 rounded-md text-[#ffffffb9] cursor-pointer border-[1.5px] border-solid px-1 py-2 hover:bg-[#ffffffb9] hover:text-[#131313] duration-[0.5s] border-[#ffffffb9]"
+          >
+            <i class="fa-solid fa-share"></i>
+            <div>Share My Profile</div>
+          </button>
+
+          <button
+            class="flex justify-center items-center border-[1.5px] border-solid border-[#ffffffb9] rounded-md px-1 py-2 cursor-pointer hover:bg-[#ffffffb9] hover:text-[#131313] w-[150px] gap-2 duration-[0.5s] text-[#ffffffb9]"
+          >
+            <i class="fa-solid fa-heart"></i>
+            <div>Follow Me</div>
+          </button>
+        </div>
+      </div>
+
+      <!--Modal Component-->
+      <div
+        class="fixed top-[33%] border-2 border-solid border-[#ffffff59] z-10 px-5 py-7 bg-[#00000088] rounded-3xl duration-[0.5s] transition-all backdrop-blur-xxs ease-in-out m-10 p-7 modal"
+      >
+        <!--Modal header-->
+        <div
+          class="flex mb-6 flex-row justify-between items-center pb-3 text-white"
+        >
+          <h1 class="text-white font-sans font-normal text-3xl">
+            Share My Profile
+          </h1>
+          <div class="text-[30px] cursor-pointer">
+            <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-white font-normal font-sans text-xl">
+            Share this via
+          </h3>
+
+          <div class="flex justify-between items-center flex-wrap mt-5 gap-4">
+            <a
+              href="#"
+              class="border border-solid border-[#ffffff88] p-4 rounded-[50%] flex items-center m-3 justify-center transition-all duration-[0.5s] no-underline w-[65px] h-[65px] text-[30px]"
+              id="facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              class="border border-solid border-[#ffffff88] p-4 rounded-[50%] flex items-center m-3 justify-center transition-all duration-[0.5s] no-underline w-[65px] h-[65px] text-[30px]"
+              id="twitter"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a
+              href="#"
+              class="border border-solid border-[#ffffff88] p-4 rounded-[50%] flex items-center m-3 justify-center transition-all duration-[0.5s] no-underline w-[65px] h-[65px] text-[30px]"
+              id="instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="border border-solid border-[#ffffff88] p-4 rounded-[50%] flex items-center m-3 justify-center transition-all duration-[0.5s] no-underline w-[65px] h-[65px] text-[30px]"
+              id="whatsapp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              href="#"
+              class="border border-solid border-[#ffffff88] p-4 rounded-[50%] flex items-center m-3 justify-center transition-all duration-[0.5s] no-underline w-[65px] h-[65px] text-[30px]"
+              id="telegram"
+            >
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--Over lay-->
+      <div class="overlay" onclick="closeModal()"></div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
